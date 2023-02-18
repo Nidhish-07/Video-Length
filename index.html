@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Length</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Video Length</h1>
+    <form action="">
+      <div>
+        <input type="file" accept="video/*" placeholder=" Select a video" />
+      </div>
+      <button type="submit">Get length</button>
+    </form>
+
+    <script>
+      document.querySelector("form").addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const file = document.querySelector("input").files[0];
+      });
+    </script>
+  </body>
+</html>
